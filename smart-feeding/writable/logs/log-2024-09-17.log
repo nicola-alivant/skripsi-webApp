@@ -1,0 +1,48 @@
+CRITICAL - 2024-09-17 22:25:12 --> ErrorException: include(template/header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\laporan.php on line 1.
+ 1 APPPATH\Views\laporan\laporan.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(template/header.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan\\laporan.php', 1)
+ 2 APPPATH\Views\laporan\laporan.php(1): include()
+ 3 SYSTEMPATH\View\View.php(234): include('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan\\laporan.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('laporan/laporan', [], true)
+ 6 APPPATH\Controllers\Laporan.php(11): view('laporan/laporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-17 22:25:32 --> ErrorException: include(../template/header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\laporan.php on line 1.
+ 1 APPPATH\Views\laporan\laporan.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../template/header.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan\\laporan.php', 1)
+ 2 APPPATH\Views\laporan\laporan.php(1): include()
+ 3 SYSTEMPATH\View\View.php(234): include('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan\\laporan.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('laporan/laporan', [], true)
+ 6 APPPATH\Controllers\Laporan.php(11): view('laporan/laporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-17 22:26:16 --> ErrorException: include(./template/header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\laporan.php on line 1.
+ 1 APPPATH\Views\laporan\laporan.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(./template/header.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan\\laporan.php', 1)
+ 2 APPPATH\Views\laporan\laporan.php(1): include()
+ 3 SYSTEMPATH\View\View.php(234): include('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan\\laporan.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('laporan/laporan', [], true)
+ 6 APPPATH\Controllers\Laporan.php(11): view('laporan/laporan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')

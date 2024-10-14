@@ -1,0 +1,56 @@
+CRITICAL - 2024-09-02 03:52:22 --> ParseError: syntax error, unexpected token "="
+[Method: GET, Route: api]
+in APPPATH\Views\api.php on line 35.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('api', [], true)
+ 3 APPPATH\Controllers\Home.php(60): view('api', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->api()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-02 03:55:26 --> Error: Undefined constant "delaySec"
+[Method: GET, Route: api]
+in APPPATH\Views\api.php on line 35.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('api', [], true)
+ 4 APPPATH\Controllers\Home.php(60): view('api', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->api()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-02 04:13:39 --> Error: Undefined constant "length"
+[Method: GET, Route: api]
+in APPPATH\Views\api.php on line 18.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('api', [], true)
+ 4 APPPATH\Controllers\Home.php(60): view('api', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->api()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-02 04:22:33 --> ErrorException: Undefined variable $jumlah
+[Method: GET, Route: api]
+in APPPATH\Views\api.php on line 15.
+ 1 APPPATH\Views\api.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah', 'E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\api.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\api.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('api', [], true)
+ 5 APPPATH\Controllers\Home.php(60): view('api', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->api()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')

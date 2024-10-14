@@ -1,0 +1,72 @@
+CRITICAL - 2024-09-10 05:59:00 --> Error: Class "App\Controllers\LaporanModel" not found
+[Method: GET, Route: laporan]
+in APPPATH\Controllers\Laporan.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-10 06:06:15 --> ErrorException: Array to string conversion
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan.php on line 48.
+ 1 APPPATH\Views\laporan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(23): view('laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-10 06:06:26 --> ErrorException: Undefined variable $jumlah
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan.php on line 52.
+ 1 APPPATH\Views\laporan.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah', 'E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\app\\Views\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(23): view('laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-10 06:10:01 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 502
+[Method: GET, Route: laporan]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 502')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://feedreport.domcloud.dev/reports')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://feedreport.domcloud.dev/reports', [])
+ 5 APPPATH\Models\LaporanModel.php(47): CodeIgniter\HTTP\CURLRequest->get('https://feedreport.domcloud.dev/reports')
+ 6 APPPATH\Controllers\Laporan.php(16): App\Models\LaporanModel->getDataReport()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-09-10 06:10:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 502
+[Method: GET, Route: laporan]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 502')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://feedreport.domcloud.dev/reports')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://feedreport.domcloud.dev/reports', [])
+ 5 APPPATH\Models\LaporanModel.php(47): CodeIgniter\HTTP\CURLRequest->get('https://feedreport.domcloud.dev/reports')
+ 6 APPPATH\Controllers\Laporan.php(16): App\Models\LaporanModel->getDataReport()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')

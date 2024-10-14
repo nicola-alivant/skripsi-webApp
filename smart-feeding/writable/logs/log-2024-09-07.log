@@ -1,0 +1,16 @@
+CRITICAL - 2024-09-07 08:31:16 --> CodeIgniter\HTTP\Exceptions\HTTPException: 35 : Recv failure: Connection was reset
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'Recv failure: Connection was reset')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://blynk.cloud/external/api/getAll?token=MWfNMKyrSoDcUmzZLGtvjbV4nT2qbNIl')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://blynk.cloud/external/api/getAll?token=MWfNMKyrSoDcUmzZLGtvjbV4nT2qbNIl', [])
+ 5 APPPATH\Models\HomeModel.php(20): CodeIgniter\HTTP\CURLRequest->get('https://blynk.cloud/external/api/getAll?token=MWfNMKyrSoDcUmzZLGtvjbV4nT2qbNIl')
+ 6 APPPATH\Controllers\Home.php(19): App\Models\HomeModel->getFromBlynk('MWfNMKyrSoDcUmzZLGtvjbV4nT2qbNIl')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
