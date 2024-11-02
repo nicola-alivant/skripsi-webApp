@@ -28,7 +28,7 @@
                 <h5 class="card-title">Lama Pemberian<br>Pakan Diberikan</h5>
                 <p class="card-text text-end" id="lamaPakan"></p>
             </div>
-            *1 detik = 10 gram
+            *1 detik = 1 gram
         </div>
     </div>
 

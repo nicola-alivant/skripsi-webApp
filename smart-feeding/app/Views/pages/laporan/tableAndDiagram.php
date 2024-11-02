@@ -233,6 +233,7 @@
                             report.jam,
                             report.suhu_air,
                             report.ph_air,
+                            report.jumlah_ikan,
                             report.lama_pakan,
                             report.status
                         ]).draw(false); // 'false' agar tidak me-refresh tabel setiap kali data ditambahkan                            

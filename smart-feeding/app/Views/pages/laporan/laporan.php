@@ -14,6 +14,7 @@
                 <th>Jam</th>
                 <th>Suhu Air</th>
                 <th>pH Air</th>
+                <th>Jumlah Ikan</th>
                 <th>Lama Pakan Diberikan</th>
                 <th>Status</th>
             </tr>
@@ -26,6 +27,7 @@
                 <th>Jam</th>
                 <th>Suhu Air</th>
                 <th>pH Air</th>
+                <th>Jumlah Ikan</th>
                 <th>Lama Pakan Diberikan</th>
                 <th>Status</th>
             </tr>
