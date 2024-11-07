@@ -1,0 +1,64 @@
+CRITICAL - 2024-11-07 23:14:54 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 400
+[Method: GET, Route: postDataUtility/v4/1]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4', [])
+ 5 APPPATH\Models\HomeModel.php(46): CodeIgniter\HTTP\CURLRequest->get('https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 6 APPPATH\Controllers\Home.php(43): App\Models\HomeModel->postDataUtility('v4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->postDataUtility('v4', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-11-07 23:14:56 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 400
+[Method: GET, Route: postDataUtility/v4/0]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4', [])
+ 5 APPPATH\Models\HomeModel.php(46): CodeIgniter\HTTP\CURLRequest->get('https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 6 APPPATH\Controllers\Home.php(43): App\Models\HomeModel->postDataUtility('v4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->postDataUtility('v4', '0')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-11-07 23:23:51 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 400
+[Method: GET, Route: postDataUtility/v4/1]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4', [])
+ 5 APPPATH\Models\HomeModel.php(46): CodeIgniter\HTTP\CURLRequest->get('https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 6 APPPATH\Controllers\Home.php(43): App\Models\HomeModel->postDataUtility('v4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->postDataUtility('v4', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')
+CRITICAL - 2024-11-07 23:23:59 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 400
+[Method: GET, Route: postDataUtility/v4/0]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(187): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4', [])
+ 5 APPPATH\Models\HomeModel.php(46): CodeIgniter\HTTP\CURLRequest->get('https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=v4')
+ 6 APPPATH\Controllers\Home.php(43): App\Models\HomeModel->postDataUtility('v4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->postDataUtility('v4', '0')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('E:\\xampp\\htdocs\\Skripsi\\smart-feeding\\public\\index.php')

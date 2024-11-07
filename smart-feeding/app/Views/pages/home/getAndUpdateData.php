@@ -12,8 +12,12 @@
                     document.getElementById('suhuKolam').innerText = data.v0 + " °C";
                     document.getElementById('phKolam').innerText = data.v1;
                     document.getElementById('lamaPakan').innerText = data.v2 + " detik";
-
                     document.getElementById('jumlahIkan').value = data.v3;
+
+                    document.getElementById('airPumpCheckbox').checked = data.v4 == 1;
+                    
+                    let label = data.v4 ? "Hidup" : "Mati";
+                    document.getElementById('airPumpLabel').innerHTML = label;
                 } else {
                     alert("No monitoring data found");
                 }
@@ -39,6 +43,9 @@
                     document.getElementById('timer2').value = data.v2;
 
                     document.getElementById('timerCheckbox').checked = data.v4 == 1;
+
+                    let label = data.v4 ? "Hidup" : "Mati";
+                    document.getElementById('timerLabel').innerHTML = label;
                 } else {
                     alert("No timer data found");
                 }
@@ -75,11 +82,11 @@
     }
 
     // Fungsi untuk mengirim data jumlah ikan
-    function submitDataFishAmount(value) {
+    function submitDataUtility(id, value) {
         showLoading();
 
         $.ajax({
-            url: '<?= base_url('postDataFishAmount/') ?>' + value,
+            url: '<?= base_url('postDataUtility/') ?>' + id + '/' + value,
             type: 'GET',
             success: function(response) {                
                 hideLoading();

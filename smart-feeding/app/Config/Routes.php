@@ -20,4 +20,4 @@ $routes->get('/dataReport', 'Laporan::getDataReport');
 // Route for post data
 $routes->get('/postDataFeeding/(:any)/(:any)', 'Home::postDataFeeding/$1/$2');
 
-$routes->get('/postDataFishAmount/(:any)', 'Home::postDataFishAmount/$1');
+$routes->get('/postDataUtility/(:any)', 'Home::postDataUtility/$1');

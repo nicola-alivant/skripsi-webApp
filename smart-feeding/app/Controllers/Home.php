@@ -39,8 +39,8 @@ class Home extends BaseController
         return $this->response->setJSON($dataTimer);
     }
 
-    function postDataFishAmount($value) {
-        $dataFishAmount = $this->homeModel->postDataFishAmount($value);
+    function postDataUtility($value) {
+        $dataFishAmount = $this->homeModel->postDataUtility($value);
 
         return $this->response->setJSON($dataFishAmount);
     }

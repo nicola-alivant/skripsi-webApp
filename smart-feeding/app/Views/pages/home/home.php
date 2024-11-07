@@ -33,9 +33,21 @@
     </div>
 
     <div class="row d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center">
-        <div class="col-md-4 mb-4"></div>
+        <div class="col-md-3 mb-5"></div>        
 
-        <div class="card col-md-4 mb-4 mx-5" style="width: 18rem; height: 100px;">
+        <div class="card col-md-3 mb-4 mx-5" style="width: 18rem; height: 100px;">
+            <div class="card-body">
+                <h5 class="card-title">Air Pump</h5>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mt-2">
+                    <label for="airPumpCheckbox" id="airPumpLabel"></label>
+                    <div class="form-check form-switch mt-1">
+                        <input class="form-check-input" type="checkbox" role="switch" id="airPumpCheckbox">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-md-3 mb-4 mx-5" style="width: 18rem; height: 100px;">
             <div class="card-body">
                 <h5 class="card-title">Jumlah Ikan</h5>
                 <input type="number" id="jumlahIkan" class="card-text text-end form-control" min="1">
@@ -43,7 +55,7 @@
             *tidak boleh bernilai 0
         </div>
 
-        <div class="col-md-4 mb-5"></div>
+        <div class="col-md-3 mb-5"></div>
     </div>
 
     <div class="d-flex align-items-center justify-content-center my-3">
@@ -51,11 +63,14 @@
     </div>
 
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h3 class="h3"><i class="bi bi-clock"></i>&nbsp;&nbsp; Nyalakan Timer</h3>
+        <h3 class="h3"><i class="bi bi-clock"></i>&nbsp;&nbsp; Timer Pakan</h3>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="timerCheckbox">
+            <div class="d-flex flex-wrap flex-md-nowrap">
+                <label for="timerCheckbox" id="timerLabel" class="me-3"></label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="timerCheckbox">
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,12 +101,25 @@
             submitDataFeeding('v0', 1);            
         });
 
+        // Event listener ketika tombol switch air pump ditekan
+        $('#airPumpCheckbox').on('click', function() {
+            if (!document.getElementById('airPumpCheckbox').checked) {
+                submitDataUtility('v4', 0);
+                document.getElementById('airPumpLabel').innerHTML = 'Mati';
+            } else if (document.getElementById('airPumpCheckbox').checked) {
+                submitDataUtility('v4', 1);
+                document.getElementById('airPumpLabel').innerHTML = 'Hidup';
+            }
+        });
+
         // Event listener ketika tombol switch timer ditekan
         $('#timerCheckbox').on('click', function() {
             if (!document.getElementById('timerCheckbox').checked) {
                 submitDataFeeding('v4', 0);
+                document.getElementById('timerLabel').innerHTML = 'Mati';
             } else if (document.getElementById('timerCheckbox').checked) {
                 submitDataFeeding('v4', 1);
+                document.getElementById('timerLabel').innerHTML = 'Hidup';
             }
         });
 
@@ -114,7 +142,7 @@
 
                 document.getElementById('jumlahIkan').value = fishAmount;
             }
-            submitDataFishAmount(fishAmount);
+            submitDataUtility(fishAmount);
         });
 
         setInterval(getDataTimer, 200000);
