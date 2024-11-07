@@ -161,7 +161,7 @@
             chartLamaPakan.data.labels.push(label); // Kolom tanggal
 
             // Ekstraksi detik dan gram dari kolom lama_pakan (misalnya "13 detik / 130 gram")
-            var lamaPakan = rowData[6].split(' / '); // Mengambil dua bagian: [detik, gram]
+            var lamaPakan = rowData[7].split(' / '); // Mengambil dua bagian: [detik, gram]
             var detik = parseInt(lamaPakan[0]); // Ambil bagian detik
             var gram = parseInt(lamaPakan[1]); // Ambil bagian gram
 
