@@ -41,7 +41,7 @@
             </li>
         </ul>
 
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Smart Feeding</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="<?= base_url() ?>">Smart Feeding</a>
     </header>
 
     <div class="container-fluid">
