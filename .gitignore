@@ -1,1 +1,3 @@
 smart-feeding/writable/debugbar/
+smart-feeding/writable/debugbar/*.json
+smart-feeding/writable/logs/
