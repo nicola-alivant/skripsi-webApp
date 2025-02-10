@@ -9,7 +9,19 @@
     var table = $('#tabel-data').DataTable({
         scrollX: true,
         pageLength : 10,
-        lengthMenu: [[5, 10, 20, 25, 50], [5, 10, 20, 25, 50]]
+        lengthMenu: [[5, 10, 20, 25, 50], [5, 10, 20, 25, 50]],
+        columnDefs: [
+            {
+                targets: 1, // Kolom Tanggal
+                render: function(data, type, row) {
+                    if (type === 'sort' || type === 'type') {
+                        const parts = data.split('-'); // Pisahkan DD-MM-YYYY
+                        return new Date(parts[2], parts[1] - 1, parts[0]); // Buat objek tanggal
+                    }
+                    return data; // Untuk tampilan biasa
+                }
+            }
+        ]
     });
 
     // Ambil id chart
