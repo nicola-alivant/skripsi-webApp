@@ -37,7 +37,7 @@
 
         <div class="card col-md-3 mb-4 mx-5" style="width: 18rem; height: 100px;">
             <div class="card-body">
-                <h5 class="card-title">Air Pump</h5>
+                <h5 class="card-title">Pompa udara</h5>
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mt-2">
                     <label for="airPumpCheckbox" id="airPumpLabel"></label>
                     <div class="form-check form-switch mt-1">
@@ -142,7 +142,7 @@
 
                 document.getElementById('jumlahIkan').value = fishAmount;
             }
-            submitDataUtility(fishAmount);
+            submitDataUtility('v3', fishAmount);
         });
 
         setInterval(getDataTimer, 200000);
