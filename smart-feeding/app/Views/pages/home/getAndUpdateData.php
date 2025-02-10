@@ -82,11 +82,11 @@
     }
 
     // Fungsi untuk mengirim data jumlah ikan
-    function submitDataUtility(id, value) {
+    function submitDataUtility(ide, value) {
         showLoading();
 
         $.ajax({
-            url: '<?= base_url('postDataUtility/') ?>' + id + '/' + value,
+            url: '<?= base_url('postDataUtility/') ?>' + ide + '/' + value,
             type: 'GET',
             success: function(response) {                
                 hideLoading();
