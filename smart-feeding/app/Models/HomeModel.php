@@ -39,8 +39,8 @@ class HomeModel extends Model
         }
     }
 
-    public function postDataUtility($value) {        
-        $url = "https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&v3=$value";
+    public function postDataUtility($id, $value) {        
+        $url = "https://blynk.cloud/external/api/update?token=Xm6mKgbYFGhd_1e_H3w_De0KItIv4TPb&$id=$value";
 
         // Mengirim permintaan GET
         $response = $this->client->get($url);
